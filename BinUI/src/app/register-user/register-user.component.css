@@ -1,0 +1,131 @@
+.register-window {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 750px;
+  background-color: #fff;
+  box-shadow: 0 0 100px #000;
+  position: absolute;
+  top: 60px;
+  left: 20%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  animation: popup 0.5s;
+  z-index: 20;
+}
+.register-text {
+  width: 50%;
+  background-color: #541690;
+  padding: 20px;
+}
+.register-text h3 {
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+}
+.register-text p {
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  width: 60%;
+}
+.register-form h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.register-form span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.book-icon {
+  height: 160px;
+  width: 160px;
+  background: url("./images/book-icon-600.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.register-form {
+  padding: 20px 40px;
+  width: 50%;
+}
+.sign-in {
+  display: flex;
+  justify-content: flex-end;
+}
+.sign-in p {
+  font-size: 10px;
+  cursor: pointer;
+}
+.sign-in button {
+  margin-left: 2px;
+  color: #3145f5;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.register-window label {
+  width: 100%;
+  font-size: 14px;
+}
+
+.register-window input {
+  margin-bottom: 20px;
+  height: 30px;
+  width: 95%;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+.sign-up {
+  height: 40px;
+  width: 150px;
+  background-color: #541690;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 97%;
+  border-radius: 2px;
+  transition: 0.3s;
+  border: 2px solid #541690;
+}
+.sign-up:hover {
+  background-color: transparent;
+  border: 2px solid #541690;
+  color: #541690;
+}
+.fa-times {
+  margin: 10px 10px 0 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.error {
+  width: 100%;
+  font-size: 10px;
+  color: red;
+  line-height: 0.2;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .register-window {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+  }
+
+  .register-text {
+    display: none;
+  }
+  .register-form {
+    padding: 20px 40px;
+    width: 100%;
+  }
+}
